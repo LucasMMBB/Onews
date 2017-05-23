@@ -3,16 +3,27 @@
 
 import React from 'react';
 import './App.css';
+import NewsPanel from '../NewsPanel/NewsPanel';
 
 class App extends React.Component{
   render(){
     return (
           <div className="on-app">
             <div className="on-header container">
-            	<h1>Onews</h1>
+              <nav>
+			    <div className="nav-wrapper">
+			      <a href="#" className="brand-logo"> Welcome to Onews</a>
+			      <ul id="nav-mobile" className="right hide-on-med-and-down">
+			        <li><a href="sass.html">Sass</a></li>
+			        <li><a href="badges.html">Components</a></li>
+			        <li><a href="collapsible.html">JavaScript</a></li>
+			      </ul>
+			    </div>
+			  </nav>
             </div>
+            <br/>
             <div className="on-content container">
-            	Here are news
+            	<NewsPanel />
             </div>
 			<footer className="on-footer page-footer">
 			    <div className="container">
