@@ -13,7 +13,6 @@ app.use('/static', express.static(path.join(__dirname, '../onews-app/build/stati
 
 app.use('/', index);
 app.use('/news', news);
-
 // catch 404 and forward to error handler
 app.use(function(req, res) {
   var err = new Error('Not Found');
