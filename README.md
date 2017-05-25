@@ -1,6 +1,6 @@
-# Project Title
+# Onews
 
-One Paragraph of project description goes here
+Real Time News Scraping and Recommendation System
 
 ## Getting Started
 
@@ -11,7 +11,7 @@ These instructions will get you a copy of the project up and running on your loc
 What things you need to install the software and how to install them
 
 ```
-Give examples
+Babel, Lodash
 ```
 
 ### Installing
@@ -72,9 +72,9 @@ We use [SemVer](http://semver.org/) for versioning. For the versions available, 
 
 ## Authors
 
-* **Billie Thompson** - *Initial work* - [PurpleBooth](https://github.com/PurpleBooth)
+* **Maoxu Liu** - *Initial work* - [LucasMMBB](https://github.com/LucasMMBB)
 
-See also the list of [contributors](https://github.com/your/project/contributors) who participated in this project.
+See also the [author's website](http://welcometolucs.com) to explore more.
 
 ## License
 
