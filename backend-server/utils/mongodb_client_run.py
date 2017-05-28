@@ -9,7 +9,7 @@ def ts_basic():
 	assert db.demo.count() == 1
 	db.demo.drop()
 	assert db.demo.count() == 0
-	print 'test passed!'
+	print 'test passed! haha!'
 
 if __name__ == "__main__":
 	ts_basic()
