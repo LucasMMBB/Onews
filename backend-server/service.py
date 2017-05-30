@@ -23,7 +23,7 @@ class RequestHandler(pyjsonrpc.HttpRequestHandler):
 	@pyjsonrpc.rpcmethod
 	def getNews(self):
 		db = mongodb_client.get_db()
-		news = list(db['demo'].find())
+		news = list(db['news'].find())
 		return json.loads(dumps(news))
 
 http_server = pyjsonrpc.ThreadingHttpServer(
