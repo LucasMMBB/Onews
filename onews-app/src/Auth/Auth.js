@@ -18,4 +18,33 @@ class Auth{
 	  static isUserAuthenticated(){
 	  	return localStorage.getItem('token') != null;
 	  }
+
+	  /**
+	   * Deauthenticate a user. Remove token and email from Local Storage
+	   * 
+	   */
+	   static deauthenticateUser(){
+	   	localStorage.removeItem('token');
+	   	localStorage.removeItem('email');
+	   }
+
+	   /**
+		* Get a token value
+		* 
+		* @returns {string}
+	    */
+	    static getToken(){
+	    	return localStorage.getItem('token');
+	    }
+
+	    /**
+	     * Get email
+	     *
+	     * @returns {string}
+	     */
+	     static getEmail(){
+	     	return localStorage.getItem('email');
+	     }
 }
+
+export default Auth;
