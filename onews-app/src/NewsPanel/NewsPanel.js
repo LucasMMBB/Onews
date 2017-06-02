@@ -50,7 +50,7 @@ class NewsPanel extends React.Component{
 		});
 		
 		return(
-			<div className = "container-fluid">
+			<div className="container-fluid">
 				<div className="list-group">
 					{news_list}
 				</div>

@@ -11,7 +11,7 @@ class NewsCard extends React.Component{
 		     <div className="container news-container" onClick={() => this.redirectToUrl(this.props.news.url)}>
 		        <div className='row'>
 		          <div className='col s4 fill'>
-		            <img alt='news image'/>
+		            <img alt='news'/>
 		          </div>
 		          <div className="col s8">
 		            <div className="news-intro-col">
