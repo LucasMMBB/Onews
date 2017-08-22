@@ -7,7 +7,7 @@ var news = require('./routes/news');
 var app = express();
 
 // view engine setup
-app.set('views', path.join(__dirname, '../client/build/'));
+//app.set('views', path.join(__dirname, '../client/build/'));
 app.set('view engine', 'jade');
 app.use('/static', express.static(path.join(__dirname, '../client/build/static/')));
 
