@@ -1,13 +1,17 @@
-import React, { Component } from 'react';
 import logo from '../assets/logo.png';
+import React from 'react';
 import './App.css';
 
-class App extends Component {
+import NewsPanel from '../NewsPanel/NewsPanel';
+
+class App extends React.Component{
   render() {
-    return (
+    return(
       <div>
-      	<img className='logo' src={logo} alt='tap-news'/>
-        <div className='container'>Hello Onews Project!</div>
+        <img className='logo' src={logo} alt='logo'/>
+        <div className='container'>
+           <NewsPanel />
+        </div>
       </div>
     );
   }

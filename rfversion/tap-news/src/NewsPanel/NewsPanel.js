@@ -6,7 +6,7 @@ import React from 'react';
 import NewsCard from '../NewsCard/NewsCard'
 
 class NewsPanel extends React.Component{
-  constructor() {
+  constructor() {// no props from outside
     super();
     this.state = {news:null};
     this.handleScroll = this.handleScroll.bind(this);
@@ -27,6 +27,25 @@ class NewsPanel extends React.Component{
   }
 
   loadMoreNews() {
+    this.setState({
+      news: [
+        {
+          'url': 'https://www.nytimes.com/interactive/2017/08/22/world/asia/north-korea-nuclear-weapons.html?hp&action=click&pgtype=Homepage&clickSource=story-heading&module=photo-spot-region&region=top-news&WT.nav=top-news',
+          'title': 'Can North Korea Hit the United States With a Nuclear Weapon?',
+          'description': 'North Korea is speeding toward a goal it has sought for decades: the ability to hit a major American city with a nuclear weapon.',
+          'digest': '1',
+          'reason': 'recommanded'
+        },
+        {
+          'url': 'https://www.nytimes.com/2017/08/21/world/asia/afghanistan-troops-trump.html?hp&action=click&pgtype=Homepage&clickSource=story-heading&module=first-column-region&region=top-news&WT.nav=top-news',
+          'title': 'Trump Sets U.S. Strategy but No ‘Blank Check’ for Afghan War',
+          'description': 'WASHINGTON — President Trump put forward on Monday a long-awaited strategy for resolving the nearly 16-year-old conflict in Afghanistan, but he declined to specify either the number of troops that would be committed, or the conditions by which he would judge the success of their mission there.',
+          'digest':'2',
+          'reason': 'Hot'
+        }
+      ]
+    });
+    /*
     let request = new Request('http://localhost:3000/news', {
       method: 'GET',
       cache: false});
@@ -38,6 +57,7 @@ class NewsPanel extends React.Component{
           news: this.state.news? this.state.news.concat(news) : news,
         });
       });
+    */
   }
 
   renderNews() {
