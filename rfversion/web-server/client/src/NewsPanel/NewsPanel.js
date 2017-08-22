@@ -26,7 +26,7 @@ class NewsPanel extends React.Component{
     }
   }
 
-  loadMoreNews() {
+  loadMoreNews() {/*
     this.setState({
       news: [
         {
@@ -45,7 +45,7 @@ class NewsPanel extends React.Component{
         }
       ]
     });
-    /*
+    */
     let request = new Request('http://localhost:3000/news', {
       method: 'GET',
       cache: false});
@@ -57,7 +57,6 @@ class NewsPanel extends React.Component{
           news: this.state.news? this.state.news.concat(news) : news,
         });
       });
-    */
   }
 
   renderNews() {
